@@ -15,6 +15,7 @@
 		82E093221B1C6DB3002AF9BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E093201B1C6DB3002AF9BC /* LaunchScreen.xib */; };
 		82E093391B1C6DEA002AF9BC /* ABDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E093381B1C6DEA002AF9BC /* ABDatabase.m */; };
 		82E0933B1B1C6E08002AF9BC /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E0933A1B1C6E08002AF9BC /* libsqlite3.0.dylib */; };
+		82E093431B1C8B55002AF9BC /* EmployeeDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 82E093421B1C8B55002AF9BC /* EmployeeDB.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		82E093371B1C6DEA002AF9BC /* ABDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABDatabase.h; sourceTree = "<group>"; };
 		82E093381B1C6DEA002AF9BC /* ABDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABDatabase.m; sourceTree = "<group>"; };
 		82E0933A1B1C6E08002AF9BC /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		82E093421B1C8B55002AF9BC /* EmployeeDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = EmployeeDB.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		82E093101B1C6DB3002AF9BC /* ABDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				82E093421B1C8B55002AF9BC /* EmployeeDB.sqlite */,
 				82E093151B1C6DB3002AF9BC /* AppDelegate.h */,
 				82E093161B1C6DB3002AF9BC /* AppDelegate.m */,
 				82E093181B1C6DB3002AF9BC /* ViewController.h */,
@@ -148,6 +151,7 @@
 				82E0931D1B1C6DB3002AF9BC /* Main.storyboard in Resources */,
 				82E093221B1C6DB3002AF9BC /* LaunchScreen.xib in Resources */,
 				82E0931F1B1C6DB3002AF9BC /* Images.xcassets in Resources */,
+				82E093431B1C8B55002AF9BC /* EmployeeDB.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

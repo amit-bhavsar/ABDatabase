@@ -32,11 +32,13 @@
 			
 			NSError *error;
 			int success = [fileManager copyItemAtPath:origPath toPath:docPath error:&error];
+			NSLog(@"%d",success);
 			
 			NSAssert1(success,@"Failed to copy database into dynamic location",error);
 		}
 		
 		int result = sqlite3_open([docPath UTF8String], &dbh);
+		NSLog(@"%d",result);
 		NSAssert1(SQLITE_OK == result, NSLocalizedStringFromTable(@"Unable to open the sqlite database (%@).", @"Database", @""), [NSString stringWithUTF8String:sqlite3_errmsg(dbh)]);
 		self.dynamic = YES;
 	}
@@ -52,6 +54,7 @@
 		NSLog(@"Opening database %@", path);
 		
 		int result = sqlite3_open([path UTF8String], &dbh);
+		NSLog(@"%d",result);
 		NSAssert1(SQLITE_OK == result, NSLocalizedStringFromTable(@"Unable to open the sqlite database (%@).", @"Database", @""), [NSString stringWithUTF8String:sqlite3_errmsg(dbh)]);
 		
 		self.dynamic = NO;
@@ -72,6 +75,7 @@
 		NSAssert1(success,@"Failed to save database into documents path", nil);
 		
 		int result = sqlite3_open([docPath UTF8String], &dbh);
+		NSLog(@"%d",result);
 		NSAssert1(SQLITE_OK == result, NSLocalizedStringFromTable(@"Unable to open the sqlite database (%@).", @"Database", @""), [NSString stringWithUTF8String:sqlite3_errmsg(dbh)]);
 		self.dynamic = YES;
 	}

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ABDatabase"
-  s.version      = "1.0"
+  s.version      = "1.0.1"
   s.summary      = "ABDatabase is SQLite wrapper for iPhone."
 
   s.description  = <<-DESC
@@ -71,7 +71,7 @@ Easy wrapper for SQLite which simplify the SQL query into easy to remember metho
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/AmitBhavsarIphone/ABDatabase.git", :tag => "1.0" }
+  s.source       = { :git => "https://github.com/AmitBhavsarIphone/ABDatabase.git", :tag => "1.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
