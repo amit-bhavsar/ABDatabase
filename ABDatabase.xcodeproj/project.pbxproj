@@ -13,21 +13,10 @@
 		82E0931D1B1C6DB3002AF9BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E0931B1B1C6DB3002AF9BC /* Main.storyboard */; };
 		82E0931F1B1C6DB3002AF9BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82E0931E1B1C6DB3002AF9BC /* Images.xcassets */; };
 		82E093221B1C6DB3002AF9BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E093201B1C6DB3002AF9BC /* LaunchScreen.xib */; };
-		82E0932E1B1C6DB3002AF9BC /* ABDatabaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E0932D1B1C6DB3002AF9BC /* ABDatabaseTests.m */; };
 		82E093391B1C6DEA002AF9BC /* ABDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E093381B1C6DEA002AF9BC /* ABDatabase.m */; };
 		82E0933B1B1C6E08002AF9BC /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E0933A1B1C6E08002AF9BC /* libsqlite3.0.dylib */; };
 		82E0933F1B1C779C002AF9BC /* EmployeeDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 82E0933E1B1C779C002AF9BC /* EmployeeDB.sqlite */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		82E093281B1C6DB3002AF9BC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82E093061B1C6DB3002AF9BC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 82E0930D1B1C6DB3002AF9BC;
-			remoteInfo = ABDatabase;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		82E0930E1B1C6DB3002AF9BC /* ABDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,9 +29,6 @@
 		82E0931C1B1C6DB3002AF9BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82E0931E1B1C6DB3002AF9BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		82E093211B1C6DB3002AF9BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		82E093271B1C6DB3002AF9BC /* ABDatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABDatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		82E0932C1B1C6DB3002AF9BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		82E0932D1B1C6DB3002AF9BC /* ABDatabaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABDatabaseTests.m; sourceTree = "<group>"; };
 		82E093371B1C6DEA002AF9BC /* ABDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABDatabase.h; sourceTree = "<group>"; };
 		82E093381B1C6DEA002AF9BC /* ABDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABDatabase.m; sourceTree = "<group>"; };
 		82E0933A1B1C6E08002AF9BC /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
@@ -58,13 +44,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82E093241B1C6DB3002AF9BC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,7 +52,6 @@
 			children = (
 				82E0933A1B1C6E08002AF9BC /* libsqlite3.0.dylib */,
 				82E093101B1C6DB3002AF9BC /* ABDatabase */,
-				82E0932A1B1C6DB3002AF9BC /* ABDatabaseTests */,
 				82E0930F1B1C6DB3002AF9BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				82E0930E1B1C6DB3002AF9BC /* ABDatabase.app */,
-				82E093271B1C6DB3002AF9BC /* ABDatabaseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,23 +91,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		82E0932A1B1C6DB3002AF9BC /* ABDatabaseTests */ = {
-			isa = PBXGroup;
-			children = (
-				82E0932D1B1C6DB3002AF9BC /* ABDatabaseTests.m */,
-				82E0932B1B1C6DB3002AF9BC /* Supporting Files */,
-			);
-			path = ABDatabaseTests;
-			sourceTree = "<group>";
-		};
-		82E0932B1B1C6DB3002AF9BC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				82E0932C1B1C6DB3002AF9BC /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,24 +111,6 @@
 			productReference = 82E0930E1B1C6DB3002AF9BC /* ABDatabase.app */;
 			productType = "com.apple.product-type.application";
 		};
-		82E093261B1C6DB3002AF9BC /* ABDatabaseTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 82E093341B1C6DB3002AF9BC /* Build configuration list for PBXNativeTarget "ABDatabaseTests" */;
-			buildPhases = (
-				82E093231B1C6DB3002AF9BC /* Sources */,
-				82E093241B1C6DB3002AF9BC /* Frameworks */,
-				82E093251B1C6DB3002AF9BC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				82E093291B1C6DB3002AF9BC /* PBXTargetDependency */,
-			);
-			name = ABDatabaseTests;
-			productName = ABDatabaseTests;
-			productReference = 82E093271B1C6DB3002AF9BC /* ABDatabaseTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,10 +122,6 @@
 				TargetAttributes = {
 					82E0930D1B1C6DB3002AF9BC = {
 						CreatedOnToolsVersion = 6.3;
-					};
-					82E093261B1C6DB3002AF9BC = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = 82E0930D1B1C6DB3002AF9BC;
 					};
 				};
 			};
@@ -201,7 +139,6 @@
 			projectRoot = "";
 			targets = (
 				82E0930D1B1C6DB3002AF9BC /* ABDatabase */,
-				82E093261B1C6DB3002AF9BC /* ABDatabaseTests */,
 			);
 		};
 /* End PBXProject section */
@@ -215,13 +152,6 @@
 				82E093221B1C6DB3002AF9BC /* LaunchScreen.xib in Resources */,
 				82E0931F1B1C6DB3002AF9BC /* Images.xcassets in Resources */,
 				82E0933F1B1C779C002AF9BC /* EmployeeDB.sqlite in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		82E093251B1C6DB3002AF9BC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,23 +169,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82E093231B1C6DB3002AF9BC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				82E0932E1B1C6DB3002AF9BC /* ABDatabaseTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		82E093291B1C6DB3002AF9BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 82E0930D1B1C6DB3002AF9BC /* ABDatabase */;
-			targetProxy = 82E093281B1C6DB3002AF9BC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		82E0931B1B1C6DB3002AF9BC /* Main.storyboard */ = {
@@ -379,40 +293,6 @@
 			};
 			name = Release;
 		};
-		82E093351B1C6DB3002AF9BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ABDatabaseTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ABDatabase.app/ABDatabase";
-			};
-			name = Debug;
-		};
-		82E093361B1C6DB3002AF9BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ABDatabaseTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ABDatabase.app/ABDatabase";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -432,14 +312,7 @@
 				82E093331B1C6DB3002AF9BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		82E093341B1C6DB3002AF9BC /* Build configuration list for PBXNativeTarget "ABDatabaseTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				82E093351B1C6DB3002AF9BC /* Debug */,
-				82E093361B1C6DB3002AF9BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
